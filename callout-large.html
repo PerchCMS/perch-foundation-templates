@@ -1,0 +1,10 @@
+<div class="callout large">
+<div class="row column text-center">
+<h1><perch:content type="smarttext" id="heading" title="true" label="Heading" /></h1>
+<p class="lead"><perch:content type="smarttext" id="strapline" label="Strapline" /></p>
+<perch:repeater id="buttons" max="3" label="Call to action buttons">
+<a href="<perch:content type="text" id="button_link" label="Button link" />" class="button large <perch:content type="select" id="button_class" allowempty="true" options="hollow" />"><perch:content type="text" id="button_text" label="Button text" /></a>
+</perch:repeater>
+
+</div>
+</div>

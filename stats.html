@@ -1,0 +1,15 @@
+<perch:repeater id="stats" label="Statistics list">
+<perch:before>
+<hr>
+<div class="row column">
+<ul class="vertical medium-horizontal menu expanded text-center">
+</perch:before>
+    
+<li><a href="<perch:content type="text" id="stat_link" label="Link" />"><div class="stat"><perch:content type="text" id="stat_value" label="Value" size="s" /></div><span><perch:content type="text" id="stat_label" label="Label" size="m" /></span></a></li>
+
+<perch:after>
+</ul>
+</div>
+<hr>
+</perch:after>
+</perch:repeater>
