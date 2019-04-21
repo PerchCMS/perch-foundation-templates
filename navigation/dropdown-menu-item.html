@@ -1,0 +1,14 @@
+<perch:before>
+  <ul class="<perch:if id="pageDepth" value="1">dropdown</perch:if> menu" <perch:if id="pageDepth" value="1">data-dropdown-menu</perch:if>>
+</perch:before>
+
+<li class="<perch:if exists="current_page">selected</perch:if>">
+  <a href="<perch:pages id="pagePath" />">
+    <perch:pages id="pageNavText" />
+  </a>
+  <perch:pages id="subitems" encode="false" />
+</li>
+
+<perch:after>
+  </ul>
+</perch:after>
